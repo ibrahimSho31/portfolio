@@ -1,0 +1,79 @@
+
+<html lang="en">
+    <link rel="stylesheet" href="myportfolio.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <head><title>Calculator</title></head>
+    <body>
+
+        <header class="header">
+            <div class="top">
+                <a href="#" class="logo">Portfolio</a>
+                <i class='bx bx-menu' id="menu-icon"></i>
+            </div>
+      
+            <div class="bottom">
+                <nav class="navbar">
+                    <a href="index.html#home" class="active">Home</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#services">Services</a>
+                    <a href="index.html#contact">Contact</a>
+                </nav>
+            </div>
+      
+      
+        </header>
+        
+            <div class="container">
+                <div class="calculator">
+                    <form>
+                        <div class="display">
+                            <input type="text" name="display">
+                        </div>
+                        <div>
+                            <input type="button" value="AC" onclick="display.value = ''"  class="operator">
+                            <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0, -1)" class="operator">
+                            <input type="button" value="." onclick="display.value += '.'" class="operator">
+                            <input type="button" value="/" onclick="display.value += '/'" class="orange">
+                        </div>
+                        <div>
+                            <input type="button" value="7" onclick="display.value += '7'" class="circle">
+                            <input type="button" value="8" onclick="display.value += '8'" class="circle">
+                            <input type="button" value="9" onclick="display.value += '9'" class="circle">
+                            <input type="button" value="*" onclick="display.value += '*'" class="orange">
+                        </div>
+                        <div>
+                            <input type="button" value="4" onclick="display.value += '4'" class="circle">
+                            <input type="button" value="5" onclick="display.value += '5'" class="circle">
+                            <input type="button" value="6" onclick="display.value += '6'" class="circle">
+                            <input type="button" value="-" onclick="display.value += '-'" class="orange">
+                        </div>
+                        <div>
+                            <input type="button" value="1" onclick="display.value += '1'" class="circle">
+                            <input type="button" value="2" onclick="display.value += '2'" class="circle">
+                            <input type="button" value="3" onclick="display.value += '3'" class="circle">
+                            <input type="button" value="+" onclick="display.value += '+'" class="orange">
+                        </div>
+                        <div>
+                            <input type="button" value="00" onclick="display.value += '00'" class="circle">
+                            <input type="button" value="0" onclick="display.value += '0'" class="circle"> 
+                            <input type="button" value="=" class="equal" onclick="display.value = eval(display.value)" >
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-text">
+                    <p>Copyright &copy; 2023 by Ibrahim | All Rights Reserved</p>
+                </div>
+        
+                <div class="footer-iconTop">
+                    <a href="#services"><i class='bx bx-up-arrow-alt'></i> </a>
+                </div>
+            </footer>
+
+            <script src="myportfolio.js"></script>
+    </body>
+</html>
